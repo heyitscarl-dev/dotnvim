@@ -28,7 +28,6 @@ return {
                 }
             end,
             auto_integrations = true,
-            default_integrations = false
         },
         config = function(_, opts)
             require("catppuccin").setup(opts)
