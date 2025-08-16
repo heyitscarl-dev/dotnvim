@@ -16,11 +16,6 @@ return {
                         preview_width = 0.4,
                     }
                 }
-            },
-            extensions = {
-                ["ui-select"] = {
-                    require("telescope.themes").get_dropdown {}
-                }
             }
         },
         config = function(_, opts)
