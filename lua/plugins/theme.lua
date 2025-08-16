@@ -10,7 +10,9 @@ return {
                     FloatBorder = { fg = colors.peach },
 
                     -- Telescope
+                    TelescopeResultsNormal = { fg = colors.text, bg = colors.mantle },
                     TelescopeResultsBorder = { fg = colors.mantle, bg = colors.mantle },
+                    TelescopePreviewNormal = { fg = colors.text, bg = colors.mantle },
                     TelescopePreviewBorder = { fg = colors.mantle, bg = colors.mantle },
 
                     TelescopePromptNormal = { bg = colors.surface0 },
