@@ -1,0 +1,4 @@
+require("core.leader")
+require("core.lazy")
+require("config.options")
+require("config.autocmds")
