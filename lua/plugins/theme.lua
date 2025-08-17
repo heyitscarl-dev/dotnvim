@@ -25,6 +25,12 @@ return {
                     -- Lazygit
                     LazyGitFloat = { bg = colors.base },
                     LazyGitBorder = { fg = colors.base, bg = colors.base },
+
+                    -- Snacks                    
+                    SnacksInputBorder = { fg = colors.surface0, bg = colors.surface0 },
+                    SnacksInputPrompt = { fg = colors.text, bg = colors.surface0 },
+                    SnacksInputNormal = { fg = colors.text, bg = colors.surface0 },
+                    SnacksInputTitle = { fg = colors.crust, bg = colors.peach },
                 }
             end,
             auto_integrations = true,
