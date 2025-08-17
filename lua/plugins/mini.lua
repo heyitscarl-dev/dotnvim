@@ -1,13 +1,21 @@
 return {
-    "echasnovski/mini.nvim",
-    version = "*",
-    config = function()
-        require("mini.ai").setup()
-        require("mini.pairs").setup()
-        require("mini.comment").setup()
-        require("mini.move").setup()
-        require("mini.splitjoin").setup()
-        require("mini.surround").setup()
-        require("mini.statusline").setup()
-    end
+    {
+        "echasnovski/mini.nvim",
+        version = "*",
+        config = function()
+            require("mini.ai").setup()
+            require("mini.pairs").setup()
+            require("mini.comment").setup()
+            require("mini.move").setup()
+            require("mini.splitjoin").setup()
+            require("mini.surround").setup()
+            require("mini.statusline").setup()
+        end
+    },
+    {
+        "folke/snacks.nvim",
+        opts = {
+            input = {}
+        }
+    }
 }
