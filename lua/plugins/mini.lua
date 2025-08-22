@@ -13,12 +13,13 @@ return {
             }
         },
         config = function(_, opts)
+            require("mini.starter").setup()
             require("mini.ai").setup()
+            require("mini.surround").setup()
             require("mini.pairs").setup()
             require("mini.comment").setup()
             require("mini.move").setup()
             require("mini.splitjoin").setup()
-            require("mini.surround").setup()
             require("mini.statusline").setup()
             require("mini.hipatterns").setup(opts.hipatterns)
         end
