@@ -51,7 +51,15 @@ return {
         branch = "master",
         lazy = false,
         build = ":TSUpdate",
-        opts = {},
+        opts = {
+            indent = { enable = true },
+            highlight = { enable = true },
+            textobjects = {
+                select = {
+                    enable = false
+                }
+            }
+        },
         config = function(_, opts)
             require("nvim-treesitter.configs").setup(opts)
         end
