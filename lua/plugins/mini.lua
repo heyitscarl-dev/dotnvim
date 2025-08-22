@@ -1,8 +1,18 @@
 return {
     {
         "echasnovski/mini.nvim",
-        version = "*",
-        config = function()
+        version = false,
+        opts = {
+            hipatterns = {
+                highlighters = {
+                    fixme = { pattern = '%f[%w]()FIXME()%f[%W]', group = 'MiniHipatternsFixme' },
+                    hack  = { pattern = '%f[%w]()HACK()%f[%W]', group = 'MiniHipatternsHack' },
+                    todo  = { pattern = '%f[%w]()TODO()%f[%W]', group = 'MiniHipatternsTodo' },
+                    note  = { pattern = '%f[%w]()NOTE()%f[%W]', group = 'MiniHipatternsNote' },
+                }
+            }
+        },
+        config = function(_, opts)
             require("mini.ai").setup()
             require("mini.pairs").setup()
             require("mini.comment").setup()
@@ -10,14 +20,7 @@ return {
             require("mini.splitjoin").setup()
             require("mini.surround").setup()
             require("mini.statusline").setup()
-            require("mini.hipatterns").setup({
-                highlighters = {
-                    fixme = { pattern = '%f[%w]()FIXME()%f[%W]', group = 'MiniHipatternsFixme' },
-                    hack  = { pattern = '%f[%w]()HACK()%f[%W]', group = 'MiniHipatternsHack' },
-                    todo  = { pattern = '%f[%w]()TODO()%f[%W]', group = 'MiniHipatternsTodo' },
-                    note  = { pattern = '%f[%w]()NOTE()%f[%W]', group = 'MiniHipatternsNote' },
-                }
-            })
+            require("mini.hipatterns").setup(opts.hipatterns)
         end
     },
     {
