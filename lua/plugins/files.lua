@@ -15,6 +15,16 @@ return {
                         prompt_position = "top",
                         preview_width = 0.4,
                     }
+                },
+                mappings = {
+                    i = {
+                        ["<M-j>"] = require("telescope.actions").move_selection_next,
+                        ["<M-k>"] = require("telescope.actions").move_selection_previous,
+                    },
+                    n = {
+                        ["<M-j>"] = require("telescope.actions").move_selection_next,
+                        ["<M-k>"] = require("telescope.actions").move_selection_previous,
+                    }
                 }
             }
         },
